@@ -1,0 +1,172 @@
+/* Color palettes
+somehow blue---#2E4C6D 
+light-blue---#396EB0
+grey---#DADDFC
+peach---FC997C
+------------------------------------------------------------------------------- */
+
+
+/* Root
+------------------------------------------------------------------------------- */
+:root{
+    --clr-bg: #ff8ef6;
+    --clr-head: #ffffff;
+    --clr-font: #e7e2e5;
+    
+}
+
+/* Global style
+------------------------------------------------------------------------------- */
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    color: var(--)
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    line-height: 1.5;
+}
+img{
+    width: 300px;
+}
+a{
+    color:
+}
+a:hover{
+    text-decoration: None;
+    color:
+
+}
+h1, h2{
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+}
+h1{
+    font-size: 80px;
+}
+h2{
+    font-size: 50px;
+}
+.content-wrap{
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+h3{
+    margin-bottom: 0;
+}
+.item-details h3 + p{
+    font-style: italic;
+}
+.item-details h3 ~ p{
+    margin: 0;
+}
+.divider > section{
+    border-bottom: 2px dotted;
+    padding: 25px 0;
+}
+.divider > section:last-of-type{
+    border-bottom: none;
+}
+/* Profile
+------------------------------------------------------------------------------- */
+header{
+    background-color: #396EB0;
+}
+
+/* Portfolio
+------------------------------------------------------------------------------- */
+.portfolio{
+    background-color: #cf7de4;
+}
+.portfolio a{
+    color:bisque;
+}
+
+.portfolio .btn{
+    background-color: chocolate;
+    border-radius: 5px;
+    padding: 1rem;
+    text-decoration: None;
+    display: inline-block;
+}
+.portfolio .btn:hover{
+    background:#d4d5e0
+}
+.portfolio-item{
+    overflow: hidden;
+    clear: both;
+}
+.portfolio-item h3{
+    margin-top: 0;
+}
+/* Work
+------------------------------------------------------------------------------- */
+.work{
+    background-color: #FC997C;
+}
+
+/* Education
+------------------------------------------------------------------------------- */
+.education{
+    background-image: url(../images/joanna-kosinska-unsplash.jpg);
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 100px;
+}
+.education p{
+    max-width: 60%;
+}
+/* Contacts
+------------------------------------------------------------------------------- */
+footer{
+    background-color: #396EB0;
+    color: #d4d5e0;
+}
+.contact-list{
+    list-style-type: none;
+    padding: 0;
+}
+.contact-list a{
+    padding: 15px;
+    display: inline-block
+}
+/* Responsive media
+------------------------------------------------------------------------------- */
+@media screen and (min-width: 750px){
+    .portfolio-item img{
+        float: left;
+        margin-right: 20px;
+    }
+    .job-item{
+        display:grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+    header, footer{
+        text-align: center;
+    }
+    .contact-list{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 749px){
+    h1{
+        font-size: 75px;
+        line-height: .9;
+        margin-bottom: 20px;
+    }
+    h2{
+        line-height: 1;
+    }
+    .contact-list a{
+        padding: 5px;
+    }
+}
